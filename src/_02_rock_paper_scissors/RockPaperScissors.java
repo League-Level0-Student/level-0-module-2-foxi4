@@ -6,6 +6,7 @@ package _02_rock_paper_scissors;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -78,10 +79,15 @@ public class RockPaperScissors extends JPanel implements ActionListener{
 
         //2. Change the value of opponentSelection to be a random number between 0 and 2;
 	//   Don't forget to create a Random object.
-	    
+    	
+	    Random ran = new Random();
+	
         //2. Change the value of opponentSelection to be a random number between 0 and 2; 
-        int opponentSelection = 0;
-        
+	    //Hint: num = ran.nextInt((75 - 25)+1) + 25;
+	   
+        int opponentSelection= ran.nextInt((2 - 0)+1)+0;
+        System.out.println(opponentSelection);
+       
         //3. Run the program again. Is the result different?
  
         int selection = 0;
@@ -96,13 +102,13 @@ public class RockPaperScissors extends JPanel implements ActionListener{
                     + "The computer chose: " + convertSelection(opponentSelection) + ".\n");
         
         if(selection == opponentSelection){
-            JOptionPane.showMessageDialog(null, "No Winner.  Play again.");
+            JOptionPane.showMessageDialog(null, "No Winner.  Play again. ");
         }else if((selection == 0 && opponentSelection == 2) || 
                  (selection == 1 && opponentSelection == 0) ||
                  (selection == 2 && opponentSelection == 1)){
-            JOptionPane.showMessageDialog(null, "You Win!");
+            JOptionPane.showMessageDialog(null, "You Win! You are now a WINner");
         }else{
-            JOptionPane.showMessageDialog(null, "You Lose!");
+            JOptionPane.showMessageDialog(null, "You Lose! You are now a LOSEr");
         }
     }
     
