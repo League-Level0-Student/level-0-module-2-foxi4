@@ -1,4 +1,4 @@
-//    Copyright (c) The League of Amazing Programmers 2013-2019
+	//    Copyright (c) The League of Amazing Programmers 2013-2019
 //    Level 0
 
 package _07_animal_farm;
@@ -13,11 +13,31 @@ import javax.swing.JApplet;
 import javax.swing.JOptionPane;
 
 public class AnimalFarm {
-	
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																						   
 	public static void main(String[] args) {
 			
-		/* 1. Ask the user which animal they want, then play the sound of that animal. */			 
-			
+		/* 1. Ask the user which animal they want, then play the sound of that animal. */	
+		
+		JOptionPane.showMessageDialog(null, "Hello lucky user! Today you will be playing something I call... Animal Farm!");
+		String animal=JOptionPane.showInputDialog("Please enter an animal from a farm!");
+	if(animal.equals("cow")) {
+		playMoo();
+	}
+	if(animal.equals("duck"))	{
+		playQuack();
+	}
+	if(animal.equals("dog"))	{
+		playWoof();
+	}
+
+	if(animal.equals("cat"))	{
+		playMeow();
+	}
+
+	if(animal.equals("llama"))	{
+		playLlama();
+	}
+
 		/* 2. Make it so that the user can keep entering new animals. */
 
 	}
@@ -37,7 +57,7 @@ public class AnimalFarm {
 	static void playMeow() {
 		playNoise(meowFile);
 	}
-	
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																									 																												   //hi
 	static void playLlama() {
 		playNoise(llamaFile);
 	}

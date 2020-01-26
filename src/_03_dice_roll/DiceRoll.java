@@ -38,7 +38,7 @@ public class DiceRoll {
 			fourImg = new ImageIcon(getClass().getResource("dice 4.png"));
 			fiveImg = new ImageIcon(getClass().getResource("dice 5.png"));
 			sixImg = new ImageIcon(getClass().getResource("dice 6.png"));
-		} catch (Exception e) {
+		} catch (Exception e) {	
 			JOptionPane.showMessageDialog(null, "Could not find one or more dice images");
 			System.exit(0);
 		}

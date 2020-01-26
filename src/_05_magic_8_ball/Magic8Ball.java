@@ -40,7 +40,7 @@ if(random==1) {
 
 	// 7. If the random number is 2
 if(random==2) {
-	JOptionPane.showMessageDialog(null, "Maybe you should ask Google? ( ͡ಥ ͜ʖ ͡ಥ)");
+	JOptionPane.showMessageDialog(null, "Ask Google. ( ͡ಥ ͜ʖ ͡ಥ)");
 }
 	// -- tell the user "Maybe you should ask Google?"
 
