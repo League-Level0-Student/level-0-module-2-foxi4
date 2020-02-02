@@ -22,13 +22,16 @@ public class SafeCracker {
 		 * Your mission: use the tryCode method to crack the safe by trying all possible
 		 * combinations
 		 */
+	for (int i = 0; i < 100000000; i++) {
+		int guess= i;
+		tryCode(guess);
+	}	
 		
-
 	}
-
+	
 	static void tryCode(int guess) {
 		System.out.println("trying " + guess);
-
+//if add line in it ill take longer to crack but if you comment out line then it will take a shorter time
 		int secretCode = 9999999 - wekncrzpasfdkjhcfjse;
 
 		if (guess == secretCode) {
@@ -49,4 +52,5 @@ public class SafeCracker {
 	}
 
 	final static int wekncrzpasfdkjhcfjse = new Random().nextInt(100);
+
 }

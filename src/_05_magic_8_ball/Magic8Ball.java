@@ -21,7 +21,7 @@ public class Magic8Ball {
 	// 3. Print out this variable
 System.out.println(random);
 	// 4. Get the user to enter a question for the 8 ball
-for (int i = 0; i < 3; i++) {
+for (int i = 0; i < 3; i++) {	
 	
 }
 JOptionPane.showMessageDialog(null, "Hello user! Today you will be playing the Magic 8 Ball!");
