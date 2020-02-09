@@ -1,4 +1,15 @@
 void draw() {
+  fill(#B29C63);
+ellipse(72,95,60,60);
+fill(#000000);
+ellipse(60,93,10,10);
+ellipse(83,93,10,10);
+fill(#F5E3B4);
+ellipse(72,110,25,25);
+fill(#000000);
+ellipse(72,100,10,10);
+ellipse(72,110,18,4);
+//there is only one mole because of the sake of time...
 
 /* Use the method below to put moles in the holes. */
 
