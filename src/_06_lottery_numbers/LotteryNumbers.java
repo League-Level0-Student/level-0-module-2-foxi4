@@ -1,3 +1,4 @@
+package _06_lottery_numbers;
 import java.util.Random;
 
 import javax.swing.JOptionPane;
